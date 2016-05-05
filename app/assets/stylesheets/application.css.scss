@@ -1,0 +1,158 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+.locale {
+  float: right;
+  margin: -0.25em 0.1em;
+}
+
+#banner {
+  background: #660000;
+  padding-top: 10px;
+  height: 80px;
+  border-bottom: 8px solid;
+  font: small-caps 60px/70px "Arial Black", sans-serif;
+  color: #fabb2d;
+  text-align: center;
+
+  img {
+    float:left;
+  }
+}
+
+#notice {
+  color: #000 !important;
+  border: 2px solid red;
+  padding: 1em;
+  margin-bottom: 2em;
+  background-color: #f0f0f0;
+  font: bold smaller sans-serif;
+}
+
+#columns {
+  background: #000000;
+
+  #main {
+    margin-left: 17em;
+    padding: 1em;
+    background: white;
+  }
+
+  #side {
+    float: left;
+    padding: 1em 2em;
+    width: 13em;
+    background: #000000;
+
+    form {
+      display: inline;
+    }
+
+    input {
+      font-size:small;
+    }
+
+    #login_welcome {
+      color:white;
+    }
+
+    #cart {
+      font-size: smaller;
+      color: white;
+      table {
+        border-top: 1px dotted #660000;
+        border-bottom: 1px dotted #660000;
+        margin-bottom: 10px;
+      }
+    }
+
+    #spotlight {
+      background: #fabb2d;
+      margin: 0.5em;
+      padding-left: 0.5em;
+      padding-right: 0.5em;
+      padding-bottom: 0.5em;
+      border: 2px solid;
+      border-color: white;
+
+      h4 {
+        padding: 4px;
+        margin: 0;
+        font: bolder 20px "Helvetica", sans-serif;
+        text-align: center;
+        color: #660000;
+      }
+
+      img {
+        height: 60px;
+        float:left;
+      }
+
+      p {
+        padding: 0;
+        text-align: right;
+        font: 12px bold "Helvetica", sans-serif;
+        color: #660000;
+      }
+    }
+
+    ul {
+      padding: 0;
+
+      li {
+        list-style: none;
+        a {
+          color: #fabb2d;
+          font-size: small;
+        }
+      }
+    }
+  }
+}
+
+.depot_form {
+  fieldset {
+    background: rgba(255, 192, 50, 0.51);
+
+    legend {
+      color: #fabb2d;
+      background: #660000;
+      font-family: sans-serif;
+      padding: 0.2em 1em;
+    }
+  }
+
+  form {
+    label {
+      width: 5em;
+      float: left;
+      text-align: right;
+      padding-top: 0.2em;
+      margin-right: 0.1em;
+      display: block;
+    }
+
+    select, textarea, input {
+      margin-left: 0.5em;
+    }
+
+    .submit {
+      margin-left: 4em;
+    }
+
+    br {
+      display: none
+    }
+  }
+}

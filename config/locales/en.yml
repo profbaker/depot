@@ -20,4 +20,45 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+
+  thanks:         "Thank you for your order."
+
+  layouts:
+    application:
+      title:      "Baker's Bookshop"
+      home:       "Home"
+      questions:  "Questions"
+      news:       "News"
+      contact:    "Contact"
+      product_ad_title: "Featured Product"
+
+  store:
+    index:
+      title_html: "Our Selection"
+      add_html:   "Add to Cart"
+
+  carts:
+    cart:
+      title:      "Your Cart"
+      empty:      "Empty Cart"
+      checkout:   "Checkout"
+
+  number:
+    currency:
+      format:
+        unit:         "$"
+        precision:    2
+        separator:    "."
+        delimiter:    ","
+        format:       "%u%n"
+
+  orders:
+    new:
+      legend:           "Please Enter Your Payment Information"
+    form:
+      name:             "Name"
+      address_html:     "Address"
+      email:            "E-mail"
+      pay_type:         "Pay With"
+      pay_prompt_html:  "Select a Payment Method"
+      submit:           "Place Order"

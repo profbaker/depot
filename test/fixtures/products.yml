@@ -11,3 +11,9 @@ two:
   description: MyText
   image_url: MyString
   price: 9.99
+
+wind:
+  title: Name of the Wind
+  description: A novel by Patrick Rothfuss.
+  image_url: kvothe.jpg
+  price: 19.99

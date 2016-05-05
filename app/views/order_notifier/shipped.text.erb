@@ -1,0 +1,14 @@
+Dear <%= @order.name %>
+
+You order has shipped!  The following items have left our emporium and are on their way to you.
+
+<%= render @order.line_items -%>
+
+Thank you for shopping with The Curious and Clever Toy Emporium.
+
+
+Cordially,
+
+Brian Baker
+Owner
+The Curious and Clever Toy Emporium
